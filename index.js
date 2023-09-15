@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 const corsOptions = {
-  origin: ['http://localhost:3000'], 
+  origin: ['https://shorty.vercel.app'], 
   methods: 'GET, POST',
   optionsSuccessStatus: 204,
 };
