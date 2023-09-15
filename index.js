@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 const corsOptions = {
-  origin: ['https://shorty.vercel.app'], 
+  origin: ['https://shorty-cut.vercel.app'], 
   methods: 'GET, POST',
   optionsSuccessStatus: 204,
 };
