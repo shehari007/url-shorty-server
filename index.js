@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 const corsOptions = {
-  origin: ['https://shorty-cut.vercel.app'], 
-  methods: 'GET, POST',
+  origin: process.env.DOMAINS, 
+  methods: process.env.METHODS,
   optionsSuccessStatus: 204,
 };
 
