@@ -4,6 +4,7 @@ const stats = require("./api/shortyStats");
 const invokeURL = require("./api/invokeURL");
 const contact = require("./api/contact");
 const report = require("./api/report");
+const perlinkstats = require("./api/perLinkStats");
 require('dotenv').config();
 var cors = require('cors');
 const app = express();
@@ -18,7 +19,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
+app.use("/api/shorty-url/perlinkstats", perlinkstats);
 app.use("/api/shorty-url/generate", generate);
 
 app.use("/api/shorty-url/stats", stats);
